@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="for estilo.css">
+     <title>form</title>
+     <img src="" width="160px" alt="logo"></a>
+
+</head>
+<body>
+
+    <h1>Formulario</h1>
+
+    <form action="proceso.php"method="post"enctype="multipart/form-data">
+   
+        <!--grupo 1:datos personales-->
+
+        <fieldset>
+         <legend>Datos personales</legend>
+         <label for="nombre">Apellidos y Nombres</label>
+         <input type="text" id="nombre" name="nombre" placeholder="Ricardo Moran" required>
+         
+         <br>
+
+         <label for="mail">Correo electronico</label>
+         <input type="email" id="mail" name="mail" placeholder="correo@empresa.com">
+
+         <br>
+
+         <label for="password">Contraseña</label>
+         <input type="password" id="password" name="password" >
+
+         <br>
+
+         <label for="telefono">Telefono o movil</label>
+         <input type="tel" id="telefono" name="telefono" placeholder="000-000-000">
+
+         <br> 
+
+         <label for="web"> Sitio web</label>
+         <input type="url" id="web" name="web" placeholder="https://ejemplo.com">
+
+         <br>
+
+         <label for="busqueda">Busqueda</label>
+         <input type="search" id="busqueda" name="busqueda">
+
+
+
+         </fieldset>
+        
+           <!--grupo 2:datos personales-->
+
+         <fieldset>
+         
+            <legend> Numeros y Rangos</legend>
+         <label for="edad">Edad </label>
+     <input type="number" id="edad" name="edad" min="1" max="75">
+
+     <br>
+
+     <label for="satisfaccion"> Nivel de satisfaccion</label>
+     <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10">
+    
+    </fieldset>
+      <!--grupo 3:fecha y hora-->
+
+     <fieldset>
+        
+         <legend> Fecha </legend>
+         <label for="fecha"> Fecha de nacimiento</label>
+         <input type="date" id="fecha" name="hora">
+
+         <br>
+ 
+        
+         
+
+        <label for="mes">Mes de inicio</label>
+         <input type="month" id="mes" name="mes">
+         
+         <br>
+
+         <label for="fecha">Semana de inicio</label>
+         <input type="week" id="semana" name="semana">
+         <br>
+
+     </fieldset> 
+    
+     <!--grupo 4 : seleccion y opcion-->
+     
+    <fieldset>
+  
+     <legend>Selecciones y opciones</legend>
+     <p>Genero</p>
+     <input type="radio" id="masculino" name="genero" value="M">
+     <label for="masculino">Masculino</label>
+     
+     <input type="radio" id="femenino" name="genero" value="M">
+     <label for="femenino">Femenino</label>
+     
+     <br>
+     <br>
+     
+     <label>Intereses</label> <br>
+     <input type="checkbox" id="tecnologia" name="intereses[]" value="tecnologia">
+     <label for="tecnologia">Polos</label>
+    
+     <br>
+    
+     <input type="checkbox" id="musica" name="musica[]" value="Musica">
+     <label for="Musica">Camisas</label>
+    
+     <br>
+     
+     <input type="checkbox" id="comida" name="comida[]" value="comida">
+     <label for="Comida">Short</label>
+
+     <br>
+
+     <input type="checkbox" id="deporte" name="deporte[]" value="deporte">
+     <label for="Deporte">Jeans</label>
+
+     <br>
+
+     <input type="checkbox" id="viajes" name="viajes[]" value="viajes">
+     <label for="viajes">Sacos</label>
+    
+     <br>
+
+     <input type="checkbox" id="hogar" name="hogar[]" value="hogar">
+     <label for="hogar">Correas</label>
+     <br>
+     <br>
+     <label for="pais">Local de compra</label>
+     <select id="pais" name="pais">
+
+     <option for="bolivia">La Victoria</option>
+     <option for="bolivia">Lima Centro</option>
+     <option for="bolivia">Carabayllo</option>
+     <option for="bolivia">San Juan de Lurigancho</option>
+     <option for="bolivia">San Juan de Miraflores</option>
+     <option for="bolivia">Magdalena</option>
+     <option for="bolivia">Ate</option>
+
+     </select>
+     <br>
+     <br>
+
+     <label for="comida">Mi prenda favorita</label>
+     <input type="text" list="lista" id="comida" name="comida">
+
+     <datalist id="lista">
+        <option value="Polo">   
+        <option value="Jeans">
+        <option value="Camisa">
+        <option value="Short">
+        <option value="Gorra">
+    
+    </datalist>
+    </fieldset>
+    
+    <br>
+    <br>
+
+   <!--grupo 5: archivo y multimedia--> 
+
+   <fieldset>
+    <legend>Archivos y multimedia--</legend>
+    <label for="archivo">Subir archivo</label>
+    <input type="file" id="archivo" name="archivo">
+
+    <br>
+
+    <label for="color">Color favorito</label>
+    <input type="color" id="color" name="color" value="">
+
+</fieldset>
+ 
+ <!-- grupo 6: textos extensos y ocultos --> 
+
+ <fieldset>
+
+ <legend>Que le gustaria que mejoremos</legend>
+
+ <label for="biografia">Comentarios</label>
+ <br>
+ <textarea id="biografia" name="biografia" rows="4" cols="60" placeholder="Escribe aqui......."></textarea>
+ 
+ </fieldset>
+
+<!--BOTONES-->
+
+ <input type="reset" value="Limpiar formulario">
+ <input type="submit" value="Enviar formulario">
+
+
+
+
+</form>
+
+</body>
+    </html>
